@@ -12,7 +12,7 @@
     "test:realtime": "node tests/realtime.js",
     "test:hardware": "node tests/rt-measure.js tier"
   },
-  "license": "UNLICENSED",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "@napi-rs/canvas": "^1.1.0"
   }

@@ -82,3 +82,11 @@ If a machine still can't keep up, the game lowers its display resolution automat
 ## Disclaimer
 
 A non-commercial fan parody. The fighters are original caricatures inspired by popular AI assistants. Those names and brands belong to their owners. This project is not affiliated with or endorsed by any of them.
+
+## License
+
+Copyright (C) 2026 kun101
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3, as published by the Free Software Foundation. It is distributed WITHOUT ANY WARRANTY. See [LICENSE](LICENSE) for the full text.
+
+The license covers this project's code and original artwork. It grants no rights to the third-party names and brands mentioned in the Disclaimer.
