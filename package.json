@@ -1,0 +1,19 @@
+{
+  "name": "tech-fighter",
+  "version": "1.0.0",
+  "description": "Tech Fighter: Battle of the Bots - an offline 2D fighting game starring chatbot mascots",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.js",
+    "test": "node tests/sim.js 10800 1 && node tests/flow.js",
+    "test:balance": "node tests/sim.js 10800 4",
+    "test:difficulty": "node tests/difficulty.js 30",
+    "serve": "python -m http.server 8765",
+    "test:realtime": "node tests/realtime.js",
+    "test:hardware": "node tests/rt-measure.js tier"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.1.0"
+  }
+}

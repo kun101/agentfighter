@@ -1,0 +1,15 @@
+<!doctype html><html><body style="margin:0;background:#000;overflow:hidden">
+<canvas id="c"></canvas>
+<script>
+// Minimal canvas perf baseline: full-window canvas, one fillRect + a few shapes per frame.
+const c = document.getElementById('c'), ctx = c.getContext('2d');
+c.width = innerWidth; c.height = innerHeight;
+let n = 0, t0 = performance.now(); window.fps = 0;
+function f(now) {
+  ctx.fillStyle = '#123'; ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = '#f80'; ctx.beginPath(); ctx.arc((now / 5) % c.width, 200, 50, 0, 7); ctx.fill();
+  n++; if (now - t0 > 1000) { window.fps = n; n = 0; t0 = now; }
+  requestAnimationFrame(f);
+}
+requestAnimationFrame(f);
+</script></body></html>
